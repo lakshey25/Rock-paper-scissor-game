@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+button1{
+  text-align: center;
+  padding: 40px 24px;
+  cursor: pointer;
+}
+button1:hover {
+  background-color: brown;
+  box-shadow: 0 20px 20px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+button2{
+  text-align: center;
+  padding: 40px 24px;
+  cursor: pointer;
+}
+button2:hover {
+  background-color: brown;
+  box-shadow: 0 20px 20px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+button3{
+  text-align: center;
+  padding: 40px 16px;
+  cursor: pointer;
+}
+button3:hover {
+  background-color: brown;
+  box-shadow: 0 20px 20px 0 rgba(252, 249, 249, 0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+button4{
+  border: 2px solid black;
+  background-color: brown;
+  cursor: pointer;
+}
+button4:hover {
+  box-shadow: 0 20px 20px 0 rgba(5, 5, 5, 0.24), 0 17px 50px 0 rgba(253, 253, 253, 0.19);
+}
+button5{
+  border: 2px solid black;
+  background-color: brown;
+  cursor: pointer;
+}
+button5:hover {
+  box-shadow: 0 20px 20px 0 rgba(5, 5, 5, 0.24), 0 17px 50px 0 rgba(253, 253, 253, 0.19);
+}
+.start{
+  font-size: 23px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.start:hover {
+  background-color: #f38282; 
+  color: white;
+  
+}
+.exit{
+  font-size: 23px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+
+}
+.exit:hover {
+  background-color: #f38282; 
+  color: white;
+}
+
+header {
+  text-align: center;
+  margin: 50px;
+}
+
+.player-choices {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.player-choices .btn {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+}
+
+.results-container {
+  text-align: center;
+  margin: 50px;
+}
+
+.results-container .results {
+  width: 100%;
+  height: 45vh;
+  margin: 40px 0;
+  padding: 40px;
+  border: 2px solid black;
+  font-size: 25px;
+  color: black;
+  border-radius: 20px;
+  font-weight: 800;
+}
+.results-header{
+  font-size: 30px;
+
+}
+#heading{
+  font-size: 40px;
+
+}
+
+.sep-div {
+  padding: 10px;
+}

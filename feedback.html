@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+    .close:hover{
+      background-color: red;
+    }
+
+    .rating {
+      display: inline-block;
+      width: 100%;
+      margin-top: 115px;
+      padding-top: 115px;
+      text-align: center;
+    }
+
+    p {
+      display: inline-block;
+      width: 100%;
+      margin-top: 40px;
+      padding-top: 20px;
+      text-align: center;
+      font-size: 300%;
+      font-style: italic;
+      display: none;
+    }
+
+
+    .feedback {
+      display: inline-block;
+      width: 100%;
+      margin-top: 40px;
+      padding-top: 40px;
+      text-align: center;
+      font-size: 300%;
+      font-style: italic;
+    }
+
+    .like,
+    .dislike {
+      display: inline-block;
+      cursor: pointer;
+      margin: 20px;
+    }
+
+    .dislike:hover,
+    .like:hover {
+      color: #2EBDD1;
+      transition: all .2s ease-in-out;
+      transform: scale(1.1);
+    }
+
+    .active {
+      color: #2EBDD1;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="feedback">
+    How did you like Game?
+    Give us your Feedback
+  </div>
+
+  <div class="rating">
+    <!-- Thumbs up -->
+    <div class="like grow">
+      <i class="fa fa-thumbs-up fa-5x like" aria-hidden="true"></i>
+    </div>
+    <!-- Thumbs down -->
+    <div class="dislike grow">
+      <i class="fa fa-thumbs-down fa-5x like" aria-hidden="true"></i>
+    </div>
+  </div>
+  <input type="button" onclick="location.href='front.html';" value="X" class="close">
+  <p>Thanks for your feedback</p>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+
+    $('.like, .dislike').on('click', function () {
+      event.preventDefault();
+      $('.active').removeClass('active');
+      $(this).addClass('active');
+      $("p").show();
+      setTimeout(function() {window.location = "front.html"}, 4000);
+    });
+  
+
+  </script>
+</body>
+
+</html>
